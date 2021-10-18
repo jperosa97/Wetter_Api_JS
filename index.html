@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/c0bb00af84.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/code.js" defer></script>
+    <title>Wetter JS Api</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Schweizer Wetter</h1>
+    </div>
+    <div class="container">
+        <div class="search" id="search-form">
+            <input type="text" name="city" class="search-bar" id="city" placeholder="Postleitzahl eingeben" required>
+            <button type="submit" class="btn_submit"><i class="fas fa-search"></i></button>
+        </div>  
+        <!--Wetter Info Card start-->
+        <div class="wetterCard">
+            <div class="wetterInfo"> 
+                <!--Background Image Card-->
+                <div class="wetterImg">
+                    <img src="./img/day_image.jpg" alt="day">  
+                </div>  
+                <div class="infoCity">
+                    <!--Stadt, Dorfname anzeigen start -->
+                    <div class="cityDate">
+                        <h2 class="city">Luzern</h2>
+                    </div> 
+                    <!--Stadt, Dorfname anzeigen end -->
+                    <!--Temperatur vom Wetter anzeigen start-->
+                    <div class="tempWetter">
+                        <h1 class="temp">53 °C</h1> 
+                        <div class="iconWetter">   
+                            <img class="icon" src="" alt="Wetter Icon">
+                            <div class="description">Sonnig</div>  
+                        </div>
+                    </div>    
+                    <!--Temperatur vom Wetter anzeigen end-->
+                </div>      
+            </div>             
+            <div class="luftContainer"> 
+                <div class="luftInfo">
+                    <!--Luftfeuchtigkeit und luftdruck anzeigen start-->
+                    <ul>
+                        <li> 
+                            <h2 >Luftfeuchtigkeit</h2>
+                            <p class="humidity">50%</p>
+                        </li>
+                        <li> 
+                            <h2>Luftdruck</h2>
+                            <p class="luftDruck">1200 mb</p>
+                        </li>
+                    </ul> 
+                     <!--Luftfeuchtigkeit und luftdruck anzeigen end-->
+                </div>
+                <div class="windContainer">
+                    <!--Windgeschwindigkeit km/h, Temp max. und min.  anzeigen start-->
+                    <ul>
+                        <li>  
+                            <h2>Windböen</h2>
+                            <p class="wind">23 Km/h</p>
+                        </li>
+                        <li>
+                            <h2>Temperatur</h2>
+                            <p class="tempMaxMin" >max: 8.22 min: 10.12</p>
+                        </li>
+                    </ul>  
+                    <!--Windgeschwindigkeit km/h, Temp max. und min.  anzeigen end--> 
+                </div>
+            </div>  
+            <div class="sonnenAufUntergang"> 
+                <h1>Sonnenaufgang / -untergang</h1>
+                <div class="sonnenAufgangContainer">
+                    <!--Sonnenauf und -untergang anzeigen start-->
+                    <div id="sonnenAuf"> 
+                        <ul>
+                            <li>
+                                <i class="fas fa-sun"></i>
+                            </li> 
+                            <hr>
+                            <li>   
+                                <p class="sonneAuf">07:20 Uhr</p>
+                            </li>
+                            <hr>
+                        </ul>                   
+                    </div>
+                    <div class="vl"></div>
+                    <div class="sonnenUntergang">
+                        <ul>
+                            <li>  
+                                <i class="fas fa-moon"></i>
+                            </li> 
+                            <hr>
+                            <li>
+                                <p class="sonneUn">18:40 Uhr</p>
+                            </li>
+                            <hr>
+                        </ul> 
+                    </div> 
+                     <!--Sonnenauf und -untergang anzeigen end-->
+                </div>
+            </div>    
+        </div>  
+        <!--Wetter Info Card end-->   
+    </div>
+    <p class="copy">&copy; Janick Perosa </p>
+    <!--Moment Js um das Datum richtig im Frontend angzuzeigen-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" 
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

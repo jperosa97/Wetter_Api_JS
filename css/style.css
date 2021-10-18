@@ -1,0 +1,183 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #2c3e50;
+    font-family: sans-serif;
+}
+body {
+    background-color: #ced7da;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .search {
+    display: flex;
+    justify-content: center; 
+}
+.container .search .search-bar {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #34495e;
+    font-size: 20px;
+}
+.container .search .btn_submit {
+    position: relative;
+    left: 20px;
+    width: 50px;
+    height: 30px;
+    background-color: #34495e;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.container .search .btn_submit i {
+    color: #ecf0f1;
+}
+.wetterCard {
+    height: 78vh;
+    position: relative;
+    top: 25px;
+    border-radius: 10px;
+    box-shadow: 15px 20px 25px #34495e;
+}
+.wetterInfo {
+    height: 83vh;
+}
+.container .wetterInfo .infoCity{
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    position: relative;
+    left: 3em;
+    top: -40em;
+}
+.container .wetterInfo .infoCity .cityDate {
+    font-size: 15px;
+}
+.container .wetterInfo h1 {
+    font-size: 35px;
+}
+.container .wetterInfo .wetterImg img {
+    width: 25vw;
+    height: 79vh;
+    border-radius: 10px;
+}
+.container .wetterInfo .iconWetter {
+    display: flex;
+    left: 0;
+    position: absolute;
+    align-items: center;
+}
+.iconWetter .icon {
+    width: 80px;
+}
+.wetterCard .luftContainer {
+    width: 20vw;
+    position: relative;
+    height: 3vh;
+    top: -32em;
+    font-size: 15px;
+}
+.wetterCard .luftContainer .luftInfo ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 25vw;
+    position: relative;
+    top: -3em;
+}
+.wetterCard .luftContainer .icon {
+    position: relative;
+    top: -2em;
+    left: 10em;
+    height: 9vh;
+}
+.wetterCard .luftContainer .windContainer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 19vw;
+    position: relative;
+    left: 35px;
+    top: -1em;
+}
+.sonnenAufUntergang {
+    position: relative;
+    top: -23em;
+}
+.sonnenAufUntergang h1{
+    position: relative;
+    left: 20px;
+    font-size: 25px;
+}
+.sonnenAufgangContainer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 15vh;
+    align-items: center;
+}
+.sonnenAufgangContainer #sonnenAuf i{
+    font-size: 30px;
+    display: flex;
+}
+.sonnenAufgangContainer #sonnenAuf ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 11vh;
+    justify-content: space-around;
+}
+.sonnenAufgangContainer #sonnenAuf ul li{
+    display: flex;
+}
+.sonnenAufgangContainer #sonnenAuf .sonnenLicht {
+    display: flex;
+    justify-content: center;
+    width: 8vw;
+}
+hr {
+    width: 10vw;
+    border-top: none;
+}
+.vl {
+    display: flex;
+    border-left: 4px solid #34495e;
+    height: 100px;
+  }
+.sonnenAufgangContainer .sonnenUntergang i{
+    font-size: 30px;
+    display: flex;
+}
+.sonnenAufgangContainer .sonnenUntergang ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 11vh;
+    justify-content: space-around;
+}
+.sonnenAufgangContainer .sonnenUntergang ul li{
+    display: flex;
+}
+.sonnenAufgangContainer .sonnenUntergang .sonnenLicht {
+    display: flex;
+    justify-content: center;
+    width: 8vw;
+}/*Copyright Stempel*/
+.copy {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: -10em;
+    opacity: 0.5;
+}
